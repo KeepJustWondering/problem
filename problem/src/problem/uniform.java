@@ -12,9 +12,9 @@ public class uniform {
 
 		for(int i=0;i<reserve.length;i++) {//같은 번호를 가진 학생 색출
 			for(int j=0;j<lost.length;j++) {
-				if(lost[j]==-1 && reserve[i]==-1){
-                    continue;
-                }
+//				if(lost[j]==-1 && reserve[i]==-1){
+//                    continue;
+//                }
 				if(reserve[i] == lost[j]){
 					reserve[i]=-1;
 					lost[j]=-1;
@@ -26,9 +26,9 @@ public class uniform {
 		
 		for(int i=0;i<reserve.length;i++) {//1차이나는 번호를 가진 학생 색출
 			for(int j=0;j<lost.length;j++) {
-				if(lost[j]==-1 && reserve[i]==-1){
-                    continue;
-                }
+//				if(lost[j]==-1 && reserve[i]==-1){
+//                    continue;
+//                }
 				if(reserve[i]+1 == lost[j]||reserve[i]-1 == lost[j]){//여분을 가진 학생이 빌려줄 사람이 있는 경우
 					reserve[i]=-1;
 					lost[j]=-1;
