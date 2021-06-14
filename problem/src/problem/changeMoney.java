@@ -4,7 +4,7 @@ public class changeMoney {
 
     public static void main(String[] args){
 
-        int n = 1510;
+        int n = 1260;
         int[] coin_types = {500,100,50,10};
 
         changeMoney result = new changeMoney();
